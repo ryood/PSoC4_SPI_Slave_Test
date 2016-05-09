@@ -31,28 +31,17 @@ void loop() {
   byte txBuffer[TX_PACKET_SIZE];
   byte rxBuffer[RX_PACKET_SIZE];
   
-  // Master(Arduino) -> Slave(PSoC)
   txBuffer[0] = cnt++;
   SPI.beginTransaction(SPISettings(1000000, MSBFIRST, SPI_MODE0));
   digitalWrite(slaveSelectPin, LOW);
-  SPI.transfer(txBuffer[0]);
+  rxBuffer[0] = SPI.transfer(txBuffer[0]);
   digitalWrite(slaveSelectPin, HIGH);
   SPI.endTransaction();
   
-  // Master(Arduino) <- Slave(PSoC)
-  SPI.beginTransaction(SPISettings(1000000, MSBFIRST, SPI_MODE0));
-  digitalWrite(slaveSelectPin, LOW);
-  rxBuffer[0] = SPI.transfer(0);
-  digitalWrite(slaveSelectPin, HIGH);
-  SPI.endTransaction();
-  
+  Serial.print("TX:");
+  Serial.print(txBuffer[0]);
+  Serial.print("\tRX:");
   Serial.print(rxBuffer[0]);
-  /*
-  Serial.print("\t");
-  Serial.print(rxBuffer[1]);
-  Serial.print("\t");
-  Serial.print(rxBuffer[2]);
-  */
   Serial.print("\r\n");
   delay(100);
 }
