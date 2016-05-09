@@ -9,8 +9,8 @@
 #include <project.h>
 #include <stdio.h>
 
-#define RX_PACKET_SIZE  1
-#define TX_PACKET_SIZE  1
+#define RX_PACKET_SIZE  3
+#define TX_PACKET_SIZE  3
 
 int main()
 {
@@ -38,14 +38,12 @@ int main()
         }
 
         // TX
-        txBuffer[0] = rxBuffer[0];
+        memcpy(txBuffer, rxBuffer, TX_PACKET_SIZE);
         SPIS_SpiUartPutArray(txBuffer, TX_PACKET_SIZE);
         
         //sprintf(strBuffer, "RX:\t%d\t%d\t%d\r\n", rxBuffer[0], rxBuffer[1], rxBuffer[2]);
-        sprintf(strBuffer, "%d\r\n", rxBuffer[0]);
-        UART_UartPutString(strBuffer);
-        
-
+        sprintf(strBuffer, "%d\t%d\t%d\r\n", rxBuffer[0], rxBuffer[1], rxBuffer[2]);
+        UART_UartPutString(strBuffer);      
         
         //CyDelay(1);
     }
