@@ -55,7 +55,7 @@ void loop()
   txData = analogRead(PIN_POT);
   rxData = sendRecieveData(txData);
   displayData(txData, rxData);
-  delay(500);
+  delay(100);
 }
 
 int sendRecieveData(int txData) {
@@ -75,15 +75,15 @@ int sendRecieveData(int txData) {
   SPI.endTransaction();
   SPI.end();
 
-  return (unsigned int)rxBuffer[1] << 8 & rxBuffer[2];
+  return ((int)rxBuffer[1] << 8) | (rxBuffer[2]);
 }
 
 void displayData(int txData, int rxData) {
   myGLCD.clrScr();
   myGLCD.print("SPI Master", 0, 0);
   
-  myGLCD.print("RD:", 0, 10);
-  myGLCD.printNumI(txData, 24,10);
+  myGLCD.print("TXDATA:", 0, 10);
+  myGLCD.printNumI(txData, 48,10);
   
   myGLCD.print("TX:", 0, 20);
   myGLCD.printNumI(txBuffer[0], 24, 20);
@@ -94,6 +94,9 @@ void displayData(int txData, int rxData) {
   myGLCD.printNumI(rxBuffer[0], 24, 30);
   myGLCD.printNumI(rxBuffer[1], 48, 30);
   myGLCD.printNumI(rxBuffer[2], 72, 30);
+  
+  myGLCD.print("RXDATA:", 0, 40);
+  myGLCD.printNumI(rxData, 48,40);
   
   myGLCD.update();
 }

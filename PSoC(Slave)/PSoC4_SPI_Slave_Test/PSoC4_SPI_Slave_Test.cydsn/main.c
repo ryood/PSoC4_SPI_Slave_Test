@@ -38,37 +38,40 @@ int main()
     for(;;)
     {
         txData += readRE();
-        // RX
+        
+        /*
         while (RX_PACKET_SIZE > SPIS_SpiUartGetRxBufferSize())
         {
             txData += readRE();
         }
-        for (i = 0; i < RX_PACKET_SIZE; i++) {
-            rxBuffer[i] = SPIS_SpiUartReadRxData();
+        */
+        if (RX_PACKET_SIZE <= SPIS_SpiUartGetRxBufferSize()) {
+            // RX
+            for (i = 0; i < RX_PACKET_SIZE; i++) {
+                rxBuffer[i] = SPIS_SpiUartReadRxData();
+            }
+
+            // TX
+            txBuffer[0] = rxBuffer[0];
+            txBuffer[1] = txData >> 8;
+            txBuffer[2] = txData & 0xff;
+            SPIS_SpiUartPutArray(txBuffer, TX_PACKET_SIZE);
+            
+            sprintf(strBuffer, "RX:%3d %3d %3d\r\n", rxBuffer[0], rxBuffer[1], rxBuffer[2]);
+            UART_UartPutString(strBuffer);
+            
+            strBuffer[14] = 0;
+            LCD_Char_Position(0, 0);
+            LCD_Char_PrintString(strBuffer);
+            
+            sprintf(strBuffer, "TX:%3d %3d %3d\r\n", txBuffer[0], txBuffer[1], txBuffer[2]);
+            //sprintf(strBuffer, "txData:%d    \r\n", txData);
+            UART_UartPutString(strBuffer);
+
+            strBuffer[14] = 0;
+            LCD_Char_Position(1, 0);
+            LCD_Char_PrintString(strBuffer);
         }
-
-        // TX
-        // memcpy(txBuffer, rxBuffer, TX_PACKET_SIZE);
-        txBuffer[0] = rxBuffer[0];
-        txBuffer[1] = txData >> 8;
-        txBuffer[2] = txData & 0xff;
-        SPIS_SpiUartPutArray(txBuffer, TX_PACKET_SIZE);
-        
-        UART_UartPutString(strBuffer);
-        
-        sprintf(strBuffer, "RX:%3d %3d %3d  \r\n", rxBuffer[0], rxBuffer[1], rxBuffer[2]);
-        UART_UartPutString(strBuffer);
-
-        LCD_Char_Position(0, 0);
-        LCD_Char_PrintString(strBuffer);
-        
-        sprintf(strBuffer, "TX:%3d %3d %3d  \r\n", txBuffer[0], txBuffer[1], txBuffer[2]);
-        //sprintf(strBuffer, "txData:%d    \r\n", txData);
-        UART_UartPutString(strBuffer);
-
-        LCD_Char_Position(1, 0);
-        LCD_Char_PrintString(strBuffer);
-        
         //CyDelay(1);
     }
 }
