@@ -57,18 +57,19 @@ int main()
             txBuffer[2] = txData & 0xff;
             SPIS_SpiUartPutArray(txBuffer, TX_PACKET_SIZE);
             
-            sprintf(strBuffer, "RX:%3d %3d %3d\r\n", rxBuffer[0], rxBuffer[1], rxBuffer[2]);
+            sprintf(strBuffer, "RX: %03u %03u %03u\r\n", rxBuffer[0], rxBuffer[1], rxBuffer[2]);
             UART_UartPutString(strBuffer);
             
-            strBuffer[14] = 0;
+            LCD_Char_ClearDisplay();
+            strBuffer[15] = 0;
             LCD_Char_Position(0, 0);
             LCD_Char_PrintString(strBuffer);
             
-            sprintf(strBuffer, "TX:%3d %3d %3d\r\n", txBuffer[0], txBuffer[1], txBuffer[2]);
+            sprintf(strBuffer, "TX: %03u %03u %03u\r\n", txBuffer[0], txBuffer[1], txBuffer[2]);
             //sprintf(strBuffer, "txData:%d    \r\n", txData);
             UART_UartPutString(strBuffer);
 
-            strBuffer[14] = 0;
+            strBuffer[15] = 0;
             LCD_Char_Position(1, 0);
             LCD_Char_PrintString(strBuffer);
         }

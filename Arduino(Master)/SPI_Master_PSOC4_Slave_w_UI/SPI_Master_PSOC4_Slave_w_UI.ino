@@ -18,7 +18,7 @@
 // POT  A0
 //
 // 2016.05.09
-//
+#include <stdio.h>
 #include <SPI.h>
 #include <LCD5110_Graph.h>
 
@@ -34,6 +34,8 @@ extern uint8_t SmallFont[];
 
 byte txBuffer[TX_PACKET_SIZE];
 byte rxBuffer[RX_PACKET_SIZE];
+
+char strBuffer[17];
 
 void setup()
 {
@@ -82,22 +84,18 @@ void displayData(int txData, int rxData) {
   myGLCD.clrScr();
   myGLCD.print("SPI Master", 0, 0);
   
-  myGLCD.print("TXDATA:", 0, 10);
-  myGLCD.printNumI(txData, 48,10);
+  sprintf(strBuffer, "TXDATA: %d", txData);
+  myGLCD.print(strBuffer, 0, 10);
   
-  myGLCD.print("TX:", 0, 20);
-  myGLCD.printNumI(txBuffer[0], 24, 20);
-  myGLCD.printNumI(txBuffer[1], 48, 20);
-  myGLCD.printNumI(txBuffer[2], 72, 20);
+  sprintf(strBuffer, "TX:%03d %03d %03d", txBuffer[0], txBuffer[1], txBuffer[2]);
+  myGLCD.print(strBuffer, 0, 20);
 
-  myGLCD.print("RX:", 0, 30);
-  myGLCD.printNumI(rxBuffer[0], 24, 30);
-  myGLCD.printNumI(rxBuffer[1], 48, 30);
-  myGLCD.printNumI(rxBuffer[2], 72, 30);
-  
-  myGLCD.print("RXDATA:", 0, 40);
-  myGLCD.printNumI(rxData, 48,40);
-  
+  sprintf(strBuffer, "RX:%03d %03d %03d", rxBuffer[0], rxBuffer[1], rxBuffer[2]);
+  myGLCD.print(strBuffer, 0, 30);
+
+  sprintf(strBuffer, "RXDATA: %d", rxData);
+  myGLCD.print(strBuffer, 0, 40);
+
   myGLCD.update();
 }
 

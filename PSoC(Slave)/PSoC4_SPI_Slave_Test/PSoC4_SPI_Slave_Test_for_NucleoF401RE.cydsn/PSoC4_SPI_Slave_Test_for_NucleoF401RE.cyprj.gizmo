@@ -12,14 +12,13 @@
 <dependency_info name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0" xml_contents_version="2">
 <CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021 type_name="CyDesigner.Common.Base.CyFileDeps" version="1">
 <file name=".\CortexM0\ARM_GCC_493\Debug\main.o">
+<dep name=".\Generated_Source\PSoC4\Clock_1.h" />
 <dep name=".\Generated_Source\PSoC4\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
 <dep name=".\Generated_Source\PSoC4\CyLib.h" />
-<dep name=".\Generated_Source\PSoC4\LCD_Char.h" />
-<dep name=".\Generated_Source\PSoC4\LCD_Char_LCDPort.h" />
-<dep name=".\Generated_Source\PSoC4\LCD_Char_LCDPort_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\Pin_RE.h" />
-<dep name=".\Generated_Source\PSoC4\Pin_RE_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\PWM.h" />
+<dep name=".\Generated_Source\PSoC4\Pin_PWM.h" />
+<dep name=".\Generated_Source\PSoC4\Pin_PWM_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\SPIS.h" />
 <dep name=".\Generated_Source\PSoC4\SPIS_BOOT.h" />
 <dep name=".\Generated_Source\PSoC4\SPIS_PINS.h" />
@@ -60,14 +59,13 @@
 <dep name=".\Generated_Source\PSoC4\project.h" />
 <dep name=".\main.c" />
 </file>
+<file name=".\Generated_Source\PSoC4\Clock_1.h" />
 <file name=".\Generated_Source\PSoC4\CyFlash.h" />
 <file name=".\Generated_Source\PSoC4\CyLFClk.h" />
 <file name=".\Generated_Source\PSoC4\CyLib.h" />
-<file name=".\Generated_Source\PSoC4\LCD_Char.h" />
-<file name=".\Generated_Source\PSoC4\LCD_Char_LCDPort.h" />
-<file name=".\Generated_Source\PSoC4\LCD_Char_LCDPort_aliases.h" />
-<file name=".\Generated_Source\PSoC4\Pin_RE.h" />
-<file name=".\Generated_Source\PSoC4\Pin_RE_aliases.h" />
+<file name=".\Generated_Source\PSoC4\PWM.h" />
+<file name=".\Generated_Source\PSoC4\Pin_PWM.h" />
+<file name=".\Generated_Source\PSoC4\Pin_PWM_aliases.h" />
 <file name=".\Generated_Source\PSoC4\SPIS.h" />
 <file name=".\Generated_Source\PSoC4\SPIS_BOOT.h" />
 <file name=".\Generated_Source\PSoC4\SPIS_PINS.h" />
@@ -107,6 +105,14 @@
 <file name=".\Generated_Source\PSoC4\cytypes.h" />
 <file name=".\Generated_Source\PSoC4\project.h" />
 <file name=".\main.c" />
+<file name=".\CortexM0\ARM_GCC_493\Debug\Clock_1.o">
+<dep name=".\Generated_Source\PSoC4\Clock_1.c" />
+<dep name=".\Generated_Source\PSoC4\Clock_1.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\Clock_1.c" />
 <file name=".\CortexM0\ARM_GCC_493\Debug\Cm0Start.o">
 <dep name=".\Generated_Source\PSoC4\Cm0Start.c" />
 <dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
@@ -148,64 +154,46 @@
 <dep name=".\Generated_Source\PSoC4\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC4\CyLib.c" />
-<file name=".\CortexM0\ARM_GCC_493\Debug\LCD_Char.o">
+<file name=".\CortexM0\ARM_GCC_493\Debug\PWM.o">
 <dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
 <dep name=".\Generated_Source\PSoC4\CyLib.h" />
-<dep name=".\Generated_Source\PSoC4\LCD_Char.c" />
-<dep name=".\Generated_Source\PSoC4\LCD_Char.h" />
+<dep name=".\Generated_Source\PSoC4\PWM.c" />
+<dep name=".\Generated_Source\PSoC4\PWM.h" />
 <dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
 <dep name=".\Generated_Source\PSoC4\cyfitter.h" />
 <dep name=".\Generated_Source\PSoC4\cytypes.h" />
 </file>
-<file name=".\Generated_Source\PSoC4\LCD_Char.c" />
-<file name=".\CortexM0\ARM_GCC_493\Debug\LCD_Char_LCDPort.o">
-<dep name=".\Generated_Source\PSoC4\LCD_Char_LCDPort.c" />
-<dep name=".\Generated_Source\PSoC4\LCD_Char_LCDPort.h" />
-<dep name=".\Generated_Source\PSoC4\LCD_Char_LCDPort_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC4\cypins.h" />
-<dep name=".\Generated_Source\PSoC4\cytypes.h" />
-</file>
-<file name=".\Generated_Source\PSoC4\LCD_Char_LCDPort.c" />
-<file name=".\CortexM0\ARM_GCC_493\Debug\LCD_Char_LCDPort_PM.o">
-<dep name=".\Generated_Source\PSoC4\LCD_Char_LCDPort.h" />
-<dep name=".\Generated_Source\PSoC4\LCD_Char_LCDPort_PM.c" />
-<dep name=".\Generated_Source\PSoC4\LCD_Char_LCDPort_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC4\cypins.h" />
-<dep name=".\Generated_Source\PSoC4\cytypes.h" />
-</file>
-<file name=".\Generated_Source\PSoC4\LCD_Char_LCDPort_PM.c" />
-<file name=".\CortexM0\ARM_GCC_493\Debug\LCD_Char_PM.o">
-<dep name=".\Generated_Source\PSoC4\LCD_Char.h" />
-<dep name=".\Generated_Source\PSoC4\LCD_Char_PM.c" />
+<file name=".\Generated_Source\PSoC4\PWM.c" />
+<file name=".\CortexM0\ARM_GCC_493\Debug\PWM_PM.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\PWM.h" />
+<dep name=".\Generated_Source\PSoC4\PWM_PM.c" />
 <dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
 <dep name=".\Generated_Source\PSoC4\cyfitter.h" />
 <dep name=".\Generated_Source\PSoC4\cytypes.h" />
 </file>
-<file name=".\Generated_Source\PSoC4\LCD_Char_PM.c" />
-<file name=".\CortexM0\ARM_GCC_493\Debug\Pin_RE.o">
-<dep name=".\Generated_Source\PSoC4\Pin_RE.c" />
-<dep name=".\Generated_Source\PSoC4\Pin_RE.h" />
-<dep name=".\Generated_Source\PSoC4\Pin_RE_aliases.h" />
+<file name=".\Generated_Source\PSoC4\PWM_PM.c" />
+<file name=".\CortexM0\ARM_GCC_493\Debug\Pin_PWM.o">
+<dep name=".\Generated_Source\PSoC4\Pin_PWM.c" />
+<dep name=".\Generated_Source\PSoC4\Pin_PWM.h" />
+<dep name=".\Generated_Source\PSoC4\Pin_PWM_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
 <dep name=".\Generated_Source\PSoC4\cyfitter.h" />
 <dep name=".\Generated_Source\PSoC4\cypins.h" />
 <dep name=".\Generated_Source\PSoC4\cytypes.h" />
 </file>
-<file name=".\Generated_Source\PSoC4\Pin_RE.c" />
-<file name=".\CortexM0\ARM_GCC_493\Debug\Pin_RE_PM.o">
-<dep name=".\Generated_Source\PSoC4\Pin_RE.h" />
-<dep name=".\Generated_Source\PSoC4\Pin_RE_PM.c" />
-<dep name=".\Generated_Source\PSoC4\Pin_RE_aliases.h" />
+<file name=".\Generated_Source\PSoC4\Pin_PWM.c" />
+<file name=".\CortexM0\ARM_GCC_493\Debug\Pin_PWM_PM.o">
+<dep name=".\Generated_Source\PSoC4\Pin_PWM.h" />
+<dep name=".\Generated_Source\PSoC4\Pin_PWM_PM.c" />
+<dep name=".\Generated_Source\PSoC4\Pin_PWM_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
 <dep name=".\Generated_Source\PSoC4\cyfitter.h" />
 <dep name=".\Generated_Source\PSoC4\cypins.h" />
 <dep name=".\Generated_Source\PSoC4\cytypes.h" />
 </file>
-<file name=".\Generated_Source\PSoC4\Pin_RE_PM.c" />
+<file name=".\Generated_Source\PSoC4\Pin_PWM_PM.c" />
 <file name=".\CortexM0\ARM_GCC_493\Debug\SPIS.o">
 <dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
 <dep name=".\Generated_Source\PSoC4\CyLib.h" />
@@ -671,6 +659,27 @@
 <file name=".\Generated_Source\PSoC4\CyBootAsmGnu.s" />
 <file name=".\Generated_Source\PSoC4\cydevicegnu_trm.inc" />
 <file name=".\Generated_Source\PSoC4\cyfittergnu.inc" />
+<file name=".\Generated_Source\PSoC4\PWM_1.h" />
+<file name=".\CortexM0\ARM_GCC_493\Debug\PWM_1.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\PWM_1.c" />
+<dep name=".\Generated_Source\PSoC4\PWM_1.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\PWM_1.c" />
+<file name=".\CortexM0\ARM_GCC_493\Debug\PWM_1_PM.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\PWM_1.h" />
+<dep name=".\Generated_Source\PSoC4\PWM_1_PM.c" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\PWM_1_PM.c" />
 </CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021>
 </dependency_info>
 </CyGuid_f44455c5-3770-4452-b988-0a7a7ff46256>
@@ -679,7 +688,7 @@
 <CyGuid_f44455c5-3770-4452-b988-0a7a7ff46256 type_name="CyDesigner.Common.ProjMgmt.Model.CyConfigDependencies" version="1">
 <dependency_info name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0" xml_contents_version="2">
 <CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021 type_name="CyDesigner.Common.Base.CyFileDeps" version="1">
-<file name=".\CortexM0\ARM_GCC_493\Debug\PSoC4_SPI_Slave_Test.hex">
+<file name=".\CortexM0\ARM_GCC_493\Debug\PSoC4_SPI_Slave_Test_for_NucleoF401RE.hex">
 <dep name=".\CortexM0\ARM_GCC_493\Debug\main.o" />
 <dep name=".\CortexM0\ARM_GCC_493\Debug\cyfitter_cfg.o" />
 <dep name=".\CortexM0\ARM_GCC_493\Debug\cymetadata.o" />
@@ -690,24 +699,17 @@
 <dep name=".\CortexM0\ARM_GCC_493\Debug\UART_UART.o" />
 <dep name=".\CortexM0\ARM_GCC_493\Debug\UART_BOOT.o" />
 <dep name=".\CortexM0\ARM_GCC_493\Debug\UART_UART_BOOT.o" />
-<dep name=".\CortexM0\ARM_GCC_493\Debug\UART_SCBCLK.o" />
-<dep name=".\CortexM0\ARM_GCC_493\Debug\UART_tx.o" />
-<dep name=".\CortexM0\ARM_GCC_493\Debug\UART_tx_PM.o" />
-<dep name=".\CortexM0\ARM_GCC_493\Debug\UART_rx.o" />
-<dep name=".\CortexM0\ARM_GCC_493\Debug\UART_rx_PM.o" />
-<dep name=".\CortexM0\ARM_GCC_493\Debug\Cm0Start.o" />
-<dep name=".\CortexM0\ARM_GCC_493\Debug\CyBootAsmGnu.o" />
-<dep name=".\CortexM0\ARM_GCC_493\Debug\CyFlash.o" />
-<dep name=".\CortexM0\ARM_GCC_493\Debug\CyLib.o" />
-<dep name=".\CortexM0\ARM_GCC_493\Debug\cyPm.o" />
-<dep name=".\CortexM0\ARM_GCC_493\Debug\cyutils.o" />
-<dep name=".\CortexM0\ARM_GCC_493\Debug\CyLFClk.o" />
 <dep name=".\CortexM0\ARM_GCC_493\Debug\SPIS.o" />
 <dep name=".\CortexM0\ARM_GCC_493\Debug\SPIS_SPI_UART.o" />
 <dep name=".\CortexM0\ARM_GCC_493\Debug\SPIS_PM.o" />
 <dep name=".\CortexM0\ARM_GCC_493\Debug\SPIS_SPI.o" />
 <dep name=".\CortexM0\ARM_GCC_493\Debug\SPIS_BOOT.o" />
 <dep name=".\CortexM0\ARM_GCC_493\Debug\SPIS_SPI_BOOT.o" />
+<dep name=".\CortexM0\ARM_GCC_493\Debug\UART_SCBCLK.o" />
+<dep name=".\CortexM0\ARM_GCC_493\Debug\UART_tx.o" />
+<dep name=".\CortexM0\ARM_GCC_493\Debug\UART_tx_PM.o" />
+<dep name=".\CortexM0\ARM_GCC_493\Debug\UART_rx.o" />
+<dep name=".\CortexM0\ARM_GCC_493\Debug\UART_rx_PM.o" />
 <dep name=".\CortexM0\ARM_GCC_493\Debug\SPIS_SCBCLK.o" />
 <dep name=".\CortexM0\ARM_GCC_493\Debug\SPIS_ss_s.o" />
 <dep name=".\CortexM0\ARM_GCC_493\Debug\SPIS_ss_s_PM.o" />
@@ -717,13 +719,19 @@
 <dep name=".\CortexM0\ARM_GCC_493\Debug\SPIS_sclk_s_PM.o" />
 <dep name=".\CortexM0\ARM_GCC_493\Debug\SPIS_mosi_s.o" />
 <dep name=".\CortexM0\ARM_GCC_493\Debug\SPIS_mosi_s_PM.o" />
-<dep name=".\CortexM0\ARM_GCC_493\Debug\LCD_Char.o" />
-<dep name=".\CortexM0\ARM_GCC_493\Debug\LCD_Char_PM.o" />
-<dep name=".\CortexM0\ARM_GCC_493\Debug\LCD_Char_LCDPort.o" />
-<dep name=".\CortexM0\ARM_GCC_493\Debug\LCD_Char_LCDPort_PM.o" />
-<dep name=".\CortexM0\ARM_GCC_493\Debug\Pin_RE.o" />
-<dep name=".\CortexM0\ARM_GCC_493\Debug\Pin_RE_PM.o" />
-<dep name=".\CortexM0\ARM_GCC_493\Debug\PSoC4_SPI_Slave_Test.a" />
+<dep name=".\CortexM0\ARM_GCC_493\Debug\Cm0Start.o" />
+<dep name=".\CortexM0\ARM_GCC_493\Debug\CyBootAsmGnu.o" />
+<dep name=".\CortexM0\ARM_GCC_493\Debug\CyFlash.o" />
+<dep name=".\CortexM0\ARM_GCC_493\Debug\CyLib.o" />
+<dep name=".\CortexM0\ARM_GCC_493\Debug\cyPm.o" />
+<dep name=".\CortexM0\ARM_GCC_493\Debug\cyutils.o" />
+<dep name=".\CortexM0\ARM_GCC_493\Debug\CyLFClk.o" />
+<dep name=".\CortexM0\ARM_GCC_493\Debug\Clock_1.o" />
+<dep name=".\CortexM0\ARM_GCC_493\Debug\Pin_PWM.o" />
+<dep name=".\CortexM0\ARM_GCC_493\Debug\Pin_PWM_PM.o" />
+<dep name=".\CortexM0\ARM_GCC_493\Debug\PWM.o" />
+<dep name=".\CortexM0\ARM_GCC_493\Debug\PWM_PM.o" />
+<dep name=".\CortexM0\ARM_GCC_493\Debug\PSoC4_SPI_Slave_Test_for_NucleoF401RE.a" />
 <dep name="${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM0\ARM_GCC_493\Debug\CyComponentLibrary.a" />
 </file>
 </CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021>
@@ -746,25 +754,17 @@
 <name_val_pair name=".\Generated_Source\PSoC4\UART_UART.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
 <name_val_pair name=".\Generated_Source\PSoC4\UART_BOOT.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
 <name_val_pair name=".\Generated_Source\PSoC4\UART_UART_BOOT.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
-<name_val_pair name=".\Generated_Source\PSoC4\UART_SCBCLK.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
-<name_val_pair name=".\Generated_Source\PSoC4\UART_tx.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
-<name_val_pair name=".\Generated_Source\PSoC4\UART_tx_PM.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
-<name_val_pair name=".\Generated_Source\PSoC4\UART_rx.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
-<name_val_pair name=".\Generated_Source\PSoC4\UART_rx_PM.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
-<name_val_pair name=".\Generated_Source\PSoC4\Cm0Start.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
-<name_val_pair name=".\Generated_Source\PSoC4\CyBootAsmGnu.s" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -alh=${OutputDir}/${CompileFile}.lst -g -W" />
-<name_val_pair name=".\Generated_Source\PSoC4\CyFlash.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
-<name_val_pair name=".\Generated_Source\PSoC4\CyLib.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
-<name_val_pair name=".\Generated_Source\PSoC4\cyPm.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
-<name_val_pair name=".\Generated_Source\PSoC4\cyutils.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
-<name_val_pair name=".\Generated_Source\PSoC4\CyLFClk.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
-<name_val_pair name="D:\Users\gizmo\Documents\PSoC\PSoC4_SPI_Slave_Test\PSoC4_SPI_Slave_Test.cydsn\CortexM0\ARM_GCC_493\Debug\PSoC4_SPI_Slave_Test.hex" v="-mcpu=cortex-m0 -mthumb -g -ffunction-sections -Og -L Generated_Source\PSoC4 -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC4\cm0gcc.ld -specs=nano.specs -Wl,--gc-sections" />
 <name_val_pair name=".\Generated_Source\PSoC4\SPIS.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
 <name_val_pair name=".\Generated_Source\PSoC4\SPIS_SPI_UART.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
 <name_val_pair name=".\Generated_Source\PSoC4\SPIS_PM.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
 <name_val_pair name=".\Generated_Source\PSoC4\SPIS_SPI.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
 <name_val_pair name=".\Generated_Source\PSoC4\SPIS_BOOT.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
 <name_val_pair name=".\Generated_Source\PSoC4\SPIS_SPI_BOOT.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
+<name_val_pair name=".\Generated_Source\PSoC4\UART_SCBCLK.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
+<name_val_pair name=".\Generated_Source\PSoC4\UART_tx.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
+<name_val_pair name=".\Generated_Source\PSoC4\UART_tx_PM.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
+<name_val_pair name=".\Generated_Source\PSoC4\UART_rx.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
+<name_val_pair name=".\Generated_Source\PSoC4\UART_rx_PM.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
 <name_val_pair name=".\Generated_Source\PSoC4\SPIS_SCBCLK.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
 <name_val_pair name=".\Generated_Source\PSoC4\SPIS_ss_s.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
 <name_val_pair name=".\Generated_Source\PSoC4\SPIS_ss_s_PM.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
@@ -774,16 +774,24 @@
 <name_val_pair name=".\Generated_Source\PSoC4\SPIS_sclk_s_PM.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
 <name_val_pair name=".\Generated_Source\PSoC4\SPIS_mosi_s.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
 <name_val_pair name=".\Generated_Source\PSoC4\SPIS_mosi_s_PM.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
-<name_val_pair name="D:\Users\gizmo\Documents\Develop\PSoC4 SPI Slave Test\PSoC(Slave)\PSoC4_SPI_Slave_Test\PSoC4_SPI_Slave_Test.cydsn\CortexM0\ARM_GCC_493\Debug\PSoC4_SPI_Slave_Test.hex" v="-mcpu=cortex-m0 -mthumb -g -ffunction-sections -Og -L Generated_Source\PSoC4 -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC4\cm0gcc.ld -specs=nano.specs -Wl,--gc-sections" />
-<name_val_pair name=".\Generated_Source\PSoC4\LCD_Char.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
-<name_val_pair name=".\Generated_Source\PSoC4\LCD_Char_PM.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
-<name_val_pair name=".\Generated_Source\PSoC4\LCD_Char_LCDPort.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
-<name_val_pair name=".\Generated_Source\PSoC4\LCD_Char_LCDPort_PM.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
-<name_val_pair name=".\Generated_Source\PSoC4\Pin_RE.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
-<name_val_pair name=".\Generated_Source\PSoC4\Pin_RE_PM.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
+<name_val_pair name=".\Generated_Source\PSoC4\Cm0Start.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
+<name_val_pair name=".\Generated_Source\PSoC4\CyBootAsmGnu.s" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -alh=${OutputDir}/${CompileFile}.lst -g -W" />
+<name_val_pair name=".\Generated_Source\PSoC4\CyFlash.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
+<name_val_pair name=".\Generated_Source\PSoC4\CyLib.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
+<name_val_pair name=".\Generated_Source\PSoC4\cyPm.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
+<name_val_pair name=".\Generated_Source\PSoC4\cyutils.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
+<name_val_pair name=".\Generated_Source\PSoC4\CyLFClk.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
+<name_val_pair name="D:\Users\gizmo\Documents\Develop\PSoC4 SPI Slave Test\PSoC(Slave)\PSoC4_SPI_Slave_Test\PSoC4_SPI_Slave_Test_for_NucleoF401RE.cydsn\CortexM0\ARM_GCC_493\Debug\PSoC4_SPI_Slave_Test_for_NucleoF401RE.hex" v="-mcpu=cortex-m0 -mthumb -g -ffunction-sections -Og -L Generated_Source\PSoC4 -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC4\cm0gcc.ld -specs=nano.specs -Wl,--gc-sections" />
+<name_val_pair name=".\Generated_Source\PSoC4\Clock_1.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
+<name_val_pair name=".\Generated_Source\PSoC4\PWM_1.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
+<name_val_pair name=".\Generated_Source\PSoC4\PWM_1_PM.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
+<name_val_pair name=".\Generated_Source\PSoC4\Pin_PWM.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
+<name_val_pair name=".\Generated_Source\PSoC4\Pin_PWM_PM.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
+<name_val_pair name=".\Generated_Source\PSoC4\PWM.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
+<name_val_pair name=".\Generated_Source\PSoC4\PWM_PM.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
 </name>
 </genericCmdLineData>
-<codeGenCmdLineTag v="-.appdatapath &quot;C:\Users\gizmo\AppData\Local\Cypress Semiconductor\PSoC Creator\3.3&quot; -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p &quot;D:\Users\gizmo\Documents\Develop\PSoC4 SPI Slave Test\PSoC(Slave)\PSoC4_SPI_Slave_Test\PSoC4_SPI_Slave_Test.cydsn\PSoC4_SPI_Slave_Test.cyprj&quot; -d CY8C4245AXI-483 -s &quot;D:\Users\gizmo\Documents\Develop\PSoC4 SPI Slave Test\PSoC(Slave)\PSoC4_SPI_Slave_Test\PSoC4_SPI_Slave_Test.cydsn\Generated_Source\PSoC4&quot; -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE" />
+<codeGenCmdLineTag v="-.appdatapath &quot;C:\Users\gizmo\AppData\Local\Cypress Semiconductor\PSoC Creator\3.3&quot; -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p &quot;D:\Users\gizmo\Documents\Develop\PSoC4 SPI Slave Test\PSoC(Slave)\PSoC4_SPI_Slave_Test\PSoC4_SPI_Slave_Test_for_NucleoF401RE.cydsn\PSoC4_SPI_Slave_Test_for_NucleoF401RE.cyprj&quot; -d CY8C4245AXI-483 -s &quot;D:\Users\gizmo\Documents\Develop\PSoC4 SPI Slave Test\PSoC(Slave)\PSoC4_SPI_Slave_Test\PSoC4_SPI_Slave_Test_for_NucleoF401RE.cydsn\Generated_Source\PSoC4&quot; -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE" />
 </CyGuid_b0374e30-ce3a-47f2-ad85-821643292c68>
 </dataGuid>
 <dataGuid v="597c5b74-0c46-4204-8b7f-96f3570671dc">
@@ -798,41 +806,37 @@
 <v>Off-Chip</v>
 </tree_states_tab_names>
 <tree_states>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Cypress Component Catalog\Communications">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Cypress Component Catalog\System">
 <ExpandedNodeIds>
 <v>Cypress Component Catalog</v>
-<v>Cypress Component Catalog\Communications</v>
-<v>Cypress Component Catalog\Communications\SPI</v>
-<v>Cypress Component Catalog\Display</v>
+<v>Cypress Component Catalog\Digital</v>
+<v>Cypress Component Catalog\Digital\Functions</v>
 <v>Cypress Component Catalog\Ports and Pins</v>
+<v>Cypress Component Catalog\System</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>Cypress Component Catalog</v>
 <v>Cypress Component Catalog\Analog</v>
 <v>Cypress Component Catalog\CapSense</v>
 <v>Cypress Component Catalog\Communications</v>
-<v>Cypress Component Catalog\Communications\I2C</v>
-<v>Cypress Component Catalog\Communications\I2S</v>
-<v>Cypress Component Catalog\Communications\LIN [v3.30]</v>
-<v>Cypress Component Catalog\Communications\Serial Communication Block (SCB) [v3.10]</v>
-<v>Cypress Component Catalog\Communications\SMBus/PMBus Slave</v>
-<v>Cypress Component Catalog\Communications\Software Transmit UART [v1.50]</v>
-<v>Cypress Component Catalog\Communications\SPI</v>
-<v>Cypress Component Catalog\Communications\SPI\SPI (SCB mode) [v3.10]</v>
-<v>Cypress Component Catalog\Communications\SPI\SPI Master [v2.50]</v>
-<v>Cypress Component Catalog\Communications\SPI\SPI Master Bidirectional mode Macro [v2.50]</v>
-<v>Cypress Component Catalog\Communications\SPI\SPI Master Full Duplex mode Macro [v2.50]</v>
-<v>Cypress Component Catalog\Communications\SPI\SPI Slave [v2.70]</v>
-<v>Cypress Component Catalog\Communications\SPI\SPI Slave Bidirectional mode Macro [v2.70]</v>
-<v>Cypress Component Catalog\Communications\SPI\SPI Slave Full Duplex mode Macro [v2.70]</v>
-<v>Cypress Component Catalog\Communications\SPI\SPI Slave Multislave Mode macro [v2.70]</v>
-<v>Cypress Component Catalog\Communications\UART (SCB mode) [v3.10]</v>
-<v>Cypress Component Catalog\Communications\UART [v2.50]</v>
 <v>Cypress Component Catalog\Digital</v>
+<v>Cypress Component Catalog\Digital\Functions</v>
+<v>Cypress Component Catalog\Digital\Functions\Counter [v3.0]</v>
+<v>Cypress Component Catalog\Digital\Functions\CRC [v2.40]</v>
+<v>Cypress Component Catalog\Digital\Functions\PrISM [v2.20]</v>
+<v>Cypress Component Catalog\Digital\Functions\PRS [v2.40]</v>
+<v>Cypress Component Catalog\Digital\Functions\PWM (TCPWM mode) [v2.10]</v>
+<v>Cypress Component Catalog\Digital\Functions\PWM [v3.30]</v>
+<v>Cypress Component Catalog\Digital\Functions\Quadrature Decoder (TCPWM mode) [v2.10]</v>
+<v>Cypress Component Catalog\Digital\Functions\Quadrature Decoder [v3.0]</v>
+<v>Cypress Component Catalog\Digital\Functions\Shift Register [v2.30]</v>
+<v>Cypress Component Catalog\Digital\Functions\Timer [v2.70]</v>
+<v>Cypress Component Catalog\Digital\Functions\Timer Counter (TCPWM mode) [v2.10]</v>
+<v>Cypress Component Catalog\Digital\Functions\Timer Counter PWM (TCPWM) [v2.10]</v>
+<v>Cypress Component Catalog\Digital\Logic</v>
+<v>Cypress Component Catalog\Digital\Registers</v>
+<v>Cypress Component Catalog\Digital\Utility</v>
 <v>Cypress Component Catalog\Display</v>
-<v>Cypress Component Catalog\Display\Character LCD [v2.20]</v>
-<v>Cypress Component Catalog\Display\Character LCD with I2C interface [v1.20]</v>
-<v>Cypress Component Catalog\Display\Segment LCD [v1.30]</v>
 <v>Cypress Component Catalog\Ports and Pins</v>
 <v>Cypress Component Catalog\Ports and Pins\Analog Pin [v2.20]</v>
 <v>Cypress Component Catalog\Ports and Pins\Digital Bidirectional Pin [v2.20]</v>
@@ -840,7 +844,12 @@
 <v>Cypress Component Catalog\Ports and Pins\Digital Output Pin [v2.20]</v>
 <v>Cypress Component Catalog\Power Supervision</v>
 <v>Cypress Component Catalog\System</v>
-<v>Cypress Component Catalog\Thermal Management</v>
+<v>Cypress Component Catalog\System\Bootloadable [v1.50]</v>
+<v>Cypress Component Catalog\System\Bootloader [v1.50]</v>
+<v>Cypress Component Catalog\System\Clock [v2.20]</v>
+<v>Cypress Component Catalog\System\Die Temperature [v1.0]</v>
+<v>Cypress Component Catalog\System\Emulated EEPROM [v1.10]</v>
+<v>Cypress Component Catalog\System\Global Signal Reference [v2.0]</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -1109,6 +1118,13 @@
 <v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.pdf</v>
 <v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v</v>
 <v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\Custom\custom.cs</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_clock_v2_20\cy_clock_v2_20.cyprimitive</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_clock_v2_20\cy_clock_v2_20.cysym</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_clock_v2_20\cy_clock_v2_20.cystate</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_clock_v2_20\PSoC4\API\clk.c</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_clock_v2_20\PSoC4\API\clk.h</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_clock_v2_20\Custom\custom.cs</v>
 <v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\SCB_P4_v3_10\SCB_P4_v3_10.cysym</v>
 <v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\SCB_P4_v3_10\SCB_P4_v3_10.pdf</v>
 <v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\SCB_P4_v3_10\SCB_P4_v3_10.cycdx</v>
@@ -1433,25 +1449,65 @@
 <v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.pdf</v>
 <v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v</v>
 <v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\Custom\custom.cs</v>
-<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CharLCD_v2_20\CharLCD_v2_20.cysch</v>
-<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CharLCD_v2_20\CharLCD_v2_20.cysym</v>
-<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CharLCD_v2_20\CharLCD_v2_20.pdf</v>
-<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CharLCD_v2_20\CharLCD_v2_20.cystate</v>
-<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CharLCD_v2_20\API\BarGraph.c</v>
-<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CharLCD_v2_20\API\CharLCD.c</v>
-<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CharLCD_v2_20\API\CharLCD.h</v>
-<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CharLCD_v2_20\API\CharLCD_PM.c</v>
-<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CharLCD_v2_20\API\CustChars.c</v>
-<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CharLCD_v2_20\Custom\cyapicustomizer.cs</v>
-<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CharLCD_v2_20\Custom\cycharlcdcontrol.cs</v>
-<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CharLCD_v2_20\Custom\cycharlcdcontrol.designer.cs</v>
-<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CharLCD_v2_20\Custom\cycustomcharacter.cs</v>
-<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CharLCD_v2_20\Custom\cycustomcharacter.designer.cs</v>
-<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CharLCD_v2_20\Custom\cycustomizer.cs</v>
-<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CharLCD_v2_20\Custom\Resources.Designer.cs</v>
-<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CharLCD_v2_20\Custom\cycharlcdcontrol.resx</v>
-<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CharLCD_v2_20\Custom\cycustomcharacter.resx</v>
-<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CharLCD_v2_20\Custom\Resources.resx</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\TCPWM_P4_v2_10\TCPWM_P4_v2_10.cystate</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\TCPWM_P4_v2_10\TCPWM_P4_v2_10.cysym</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\TCPWM_P4_v2_10\TCPWM_P4_v2_10.pdf</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\TCPWM_P4_v2_10\TCPWM_P4_v2_10.cycdx</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\TCPWM_P4_v2_10\Custom\cycustomizer.cs</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\TCPWM_P4_v2_10\Custom\cyparameters.cs</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\TCPWM_P4_v2_10\Custom\Resources.Designer.cs</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\TCPWM_P4_v2_10\Custom\cyconfigtab.cs</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\TCPWM_P4_v2_10\Custom\cyconfigtab.designer.cs</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\TCPWM_P4_v2_10\Custom\cyimage.cs</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\TCPWM_P4_v2_10\Custom\cytimercountertab.cs</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\TCPWM_P4_v2_10\Custom\cytimercountertab.designer.cs</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\TCPWM_P4_v2_10\Custom\cypwmtab.cs</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\TCPWM_P4_v2_10\Custom\cypwmtab.designer.cs</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\TCPWM_P4_v2_10\Custom\cyquaddectab.cs</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\TCPWM_P4_v2_10\Custom\cyquaddectab.designer.cs</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\TCPWM_P4_v2_10\Custom\cyregistergrid.cs</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\TCPWM_P4_v2_10\Custom\cyregistergrid.designer.cs</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\TCPWM_P4_v2_10\Custom\cytcpwmtab.cs</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\TCPWM_P4_v2_10\Custom\cytcpwmtab.designer.cs</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\TCPWM_P4_v2_10\Custom\cyterminalmodes.cs</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\TCPWM_P4_v2_10\Custom\Resources.resx</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\TCPWM_P4_v2_10\Custom\cyconfigtab.resx</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\TCPWM_P4_v2_10\Custom\cytimercountertab.resx</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\TCPWM_P4_v2_10\Custom\cypwmtab.resx</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\TCPWM_P4_v2_10\Custom\cyquaddectab.resx</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\TCPWM_P4_v2_10\Custom\cyregistergrid.resx</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\TCPWM_P4_v2_10\Custom\cytcpwmtab.resx</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\TCPWM_P4_v2_10\PSoC4\TCPWM_P4_v2_10.cysch</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\TCPWM_P4_v2_10</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\TCPWM_P4_v2_10\PSoC4\API\TCPWM.c</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\TCPWM_P4_v2_10\PSoC4\API\TCPWM.h</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\TCPWM_P4_v2_10\PSoC4\API\TCPWM_PM.c</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_m0s8_tcpwm_v1_0\cy_m0s8_tcpwm_v1_0.cysym</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_m0s8_tcpwm_v1_0\PSoC4\cy_m0s8_tcpwm_v1_0.cyprimitive</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.cysym</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.pdf</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\Custom\custom.cs</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.cysym</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.pdf</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\Custom\custom.cs</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.cysym</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.pdf</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\Custom\custom.cs</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.cysym</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.pdf</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\Custom\custom.cs</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.cysym</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.pdf</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\Custom\custom.cs</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.cysym</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.pdf</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\Custom\custom.cs</v>
 <v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\cy_pins_v2_20.cysym</v>
 <v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\cy_pins_v2_20.cystate</v>
@@ -1492,47 +1548,7 @@
 <v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\PSoC4\API\pins.h</v>
 <v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\PSoC4\API\aliases.h</v>
 <v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\PSoC4\API\pins_PM.c</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\cy_pins_v2_20.cysym</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\cy_pins_v2_20.cystate</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\cy_pins_v2_20.cyprimitive</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\Custom\custom.cs</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\Custom\cyenums.cs</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\Custom\cypinsdata.cs</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\Custom\cypinpicture.cs</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\Custom\cypinutils.cs</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\Custom\cygeneralcontrol.cs</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\Custom\cygeneralcontrol.Designer.cs</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\Custom\cyinputcontrol.cs</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\Custom\cyinputcontrol.Designer.cs</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\Custom\cymappingcontrol.cs</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\Custom\cymappingcontrol.Designer.cs</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\Custom\cyoutputcontrol.cs</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\Custom\cyoutputcontrol.Designer.cs</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\Custom\cypinaliasdialog.cs</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\Custom\cypinaliasdialog.Designer.cs</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\Custom\cypinscontrol.cs</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\Custom\cypinscontrol.Designer.cs</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\Custom\cyporcontrol.cs</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\Custom\cyporcontrol.Designer.cs</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\Custom\Resource1.Designer.cs</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\Custom\cyclockingcontrol.cs</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\Custom\cyclockingcontrol.Designer.cs</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\Custom\cygeneralcontrol.resx</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\Custom\cyinputcontrol.resx</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\Custom\cymappingcontrol.resx</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\Custom\cyoutputcontrol.resx</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\Custom\cypinaliasdialog.resx</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\Custom\cypinscontrol.resx</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\Custom\cyporcontrol.resx</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\Custom\Resource1.resx</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\Custom\cyclockingcontrol.resx</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\PSoC4\API\pins.c</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\PSoC4\API\pins.h</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\PSoC4\API\aliases.h</v>
-<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\PSoC4\API\pins_PM.c</v>
-<v>.\PSoC4_SPI_Slave_Test.cydwr</v>
+<v>.\PSoC4_SPI_Slave_Test_for_NucleoF401RE.cydwr</v>
 <v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\cy_boot_v5_30\PSoC4\API\cm0gcc.ld</v>
 <v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\cy_boot_v5_30\PSoC4\API\Cm0RealView.scat</v>
 <v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\cy_boot_v5_30\PSoC4\API\Cm0Start.c</v>
@@ -1581,6 +1597,18 @@
 <v>.\Generated_Source\PSoC4\UART_SPI_UART_PVT.h</v>
 <v>.\Generated_Source\PSoC4\UART_PVT.h</v>
 <v>.\Generated_Source\PSoC4\UART_BOOT.h</v>
+<v>.\Generated_Source\PSoC4\SPIS.c</v>
+<v>.\Generated_Source\PSoC4\SPIS.h</v>
+<v>.\Generated_Source\PSoC4\SPIS_SPI_UART.h</v>
+<v>.\Generated_Source\PSoC4\SPIS_SPI_UART.c</v>
+<v>.\Generated_Source\PSoC4\SPIS_PM.c</v>
+<v>.\Generated_Source\PSoC4\SPIS_SPI.c</v>
+<v>.\Generated_Source\PSoC4\SPIS_BOOT.c</v>
+<v>.\Generated_Source\PSoC4\SPIS_SPI_BOOT.c</v>
+<v>.\Generated_Source\PSoC4\SPIS_PINS.h</v>
+<v>.\Generated_Source\PSoC4\SPIS_SPI_UART_PVT.h</v>
+<v>.\Generated_Source\PSoC4\SPIS_PVT.h</v>
+<v>.\Generated_Source\PSoC4\SPIS_BOOT.h</v>
 <v>.\Generated_Source\PSoC4\UART_SCBCLK.c</v>
 <v>.\Generated_Source\PSoC4\UART_SCBCLK.h</v>
 <v>.\Generated_Source\PSoC4\UART_tx.c</v>
@@ -1591,6 +1619,24 @@
 <v>.\Generated_Source\PSoC4\UART_rx.h</v>
 <v>.\Generated_Source\PSoC4\UART_rx_aliases.h</v>
 <v>.\Generated_Source\PSoC4\UART_rx_PM.c</v>
+<v>.\Generated_Source\PSoC4\SPIS_SCBCLK.c</v>
+<v>.\Generated_Source\PSoC4\SPIS_SCBCLK.h</v>
+<v>.\Generated_Source\PSoC4\SPIS_ss_s.c</v>
+<v>.\Generated_Source\PSoC4\SPIS_ss_s.h</v>
+<v>.\Generated_Source\PSoC4\SPIS_ss_s_aliases.h</v>
+<v>.\Generated_Source\PSoC4\SPIS_ss_s_PM.c</v>
+<v>.\Generated_Source\PSoC4\SPIS_miso_s.c</v>
+<v>.\Generated_Source\PSoC4\SPIS_miso_s.h</v>
+<v>.\Generated_Source\PSoC4\SPIS_miso_s_aliases.h</v>
+<v>.\Generated_Source\PSoC4\SPIS_miso_s_PM.c</v>
+<v>.\Generated_Source\PSoC4\SPIS_sclk_s.c</v>
+<v>.\Generated_Source\PSoC4\SPIS_sclk_s.h</v>
+<v>.\Generated_Source\PSoC4\SPIS_sclk_s_aliases.h</v>
+<v>.\Generated_Source\PSoC4\SPIS_sclk_s_PM.c</v>
+<v>.\Generated_Source\PSoC4\SPIS_mosi_s.c</v>
+<v>.\Generated_Source\PSoC4\SPIS_mosi_s.h</v>
+<v>.\Generated_Source\PSoC4\SPIS_mosi_s_aliases.h</v>
+<v>.\Generated_Source\PSoC4\SPIS_mosi_s_PM.c</v>
 <v>.\Generated_Source\PSoC4\cycodeshareimport.ld</v>
 <v>.\Generated_Source\PSoC4\cycodeshareexport.ld</v>
 <v>.\Generated_Source\PSoC4\cycodeshareimport.scat</v>
@@ -1617,75 +1663,38 @@
 <v>.\Generated_Source\PSoC4\CyLFClk.c</v>
 <v>.\Generated_Source\PSoC4\CyLFClk.h</v>
 <v>.\Generated_Source\PSoC4\project.h</v>
-<v>.\Generated_Source\PSoC4\SPIS.c</v>
-<v>.\Generated_Source\PSoC4\SPIS.h</v>
-<v>.\Generated_Source\PSoC4\SPIS_SPI_UART.h</v>
-<v>.\Generated_Source\PSoC4\SPIS_SPI_UART.c</v>
-<v>.\Generated_Source\PSoC4\SPIS_PM.c</v>
-<v>.\Generated_Source\PSoC4\SPIS_SPI.c</v>
-<v>.\Generated_Source\PSoC4\SPIS_BOOT.c</v>
-<v>.\Generated_Source\PSoC4\SPIS_SPI_BOOT.c</v>
-<v>.\Generated_Source\PSoC4\SPIS_PINS.h</v>
-<v>.\Generated_Source\PSoC4\SPIS_SPI_UART_PVT.h</v>
-<v>.\Generated_Source\PSoC4\SPIS_PVT.h</v>
-<v>.\Generated_Source\PSoC4\SPIS_BOOT.h</v>
-<v>.\Generated_Source\PSoC4\SPIS_SCBCLK.c</v>
-<v>.\Generated_Source\PSoC4\SPIS_SCBCLK.h</v>
-<v>.\Generated_Source\PSoC4\SPIS_ss_s.c</v>
-<v>.\Generated_Source\PSoC4\SPIS_ss_s.h</v>
-<v>.\Generated_Source\PSoC4\SPIS_ss_s_aliases.h</v>
-<v>.\Generated_Source\PSoC4\SPIS_ss_s_PM.c</v>
-<v>.\Generated_Source\PSoC4\SPIS_miso_s.c</v>
-<v>.\Generated_Source\PSoC4\SPIS_miso_s.h</v>
-<v>.\Generated_Source\PSoC4\SPIS_miso_s_aliases.h</v>
-<v>.\Generated_Source\PSoC4\SPIS_miso_s_PM.c</v>
-<v>.\Generated_Source\PSoC4\SPIS_sclk_s.c</v>
-<v>.\Generated_Source\PSoC4\SPIS_sclk_s.h</v>
-<v>.\Generated_Source\PSoC4\SPIS_sclk_s_aliases.h</v>
-<v>.\Generated_Source\PSoC4\SPIS_sclk_s_PM.c</v>
-<v>.\Generated_Source\PSoC4\SPIS_mosi_s.c</v>
-<v>.\Generated_Source\PSoC4\SPIS_mosi_s.h</v>
-<v>.\Generated_Source\PSoC4\SPIS_mosi_s_aliases.h</v>
-<v>.\Generated_Source\PSoC4\SPIS_mosi_s_PM.c</v>
-<v>.\Generated_Source\PSoC4\LCD_Char.c</v>
-<v>.\Generated_Source\PSoC4\LCD_Char.h</v>
-<v>.\Generated_Source\PSoC4\LCD_Char_PM.c</v>
-<v>.\Generated_Source\PSoC4\LCD_Char_LCDPort.c</v>
-<v>.\Generated_Source\PSoC4\LCD_Char_LCDPort.h</v>
-<v>.\Generated_Source\PSoC4\LCD_Char_LCDPort_aliases.h</v>
-<v>.\Generated_Source\PSoC4\LCD_Char_LCDPort_PM.c</v>
-<v>.\Generated_Source\PSoC4\Pin_RE_A.c</v>
-<v>.\Generated_Source\PSoC4\Pin_RE_A.h</v>
-<v>.\Generated_Source\PSoC4\Pin_RE_A_aliases.h</v>
-<v>.\Generated_Source\PSoC4\Pin_RE_A_PM.c</v>
-<v>.\Generated_Source\PSoC4\Pin_RE_B.c</v>
-<v>.\Generated_Source\PSoC4\Pin_RE_B.h</v>
-<v>.\Generated_Source\PSoC4\Pin_RE_B_aliases.h</v>
-<v>.\Generated_Source\PSoC4\Pin_RE_B_PM.c</v>
-<v>.\Generated_Source\PSoC4\Pin_RE.c</v>
-<v>.\Generated_Source\PSoC4\Pin_RE.h</v>
-<v>.\Generated_Source\PSoC4\Pin_RE_aliases.h</v>
-<v>.\Generated_Source\PSoC4\Pin_RE_PM.c</v>
+<v>.\Generated_Source\PSoC4\Clock_1.c</v>
+<v>.\Generated_Source\PSoC4\Clock_1.h</v>
+<v>.\Generated_Source\PSoC4\PWM_1.c</v>
+<v>.\Generated_Source\PSoC4\PWM_1.h</v>
+<v>.\Generated_Source\PSoC4\PWM_1_PM.c</v>
+<v>.\Generated_Source\PSoC4\Pin_PWM.c</v>
+<v>.\Generated_Source\PSoC4\Pin_PWM.h</v>
+<v>.\Generated_Source\PSoC4\Pin_PWM_aliases.h</v>
+<v>.\Generated_Source\PSoC4\Pin_PWM_PM.c</v>
+<v>.\Generated_Source\PSoC4\PWM.c</v>
+<v>.\Generated_Source\PSoC4\PWM.h</v>
+<v>.\Generated_Source\PSoC4\PWM_PM.c</v>
 </gen_list>
 <warp_dep>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\ieee\work\stdlogic.vif</v>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif</v>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif</v>
 </warp_dep>
-<deps_time v="131072492312204422" />
+<deps_time v="131080869456227713" />
 <top_block v="TopDesign" />
 <last_generation v="0" />
 </CyGuid_925cc1e1-309e-4e08-b0a1-09a83c35b157>
 </dataGuid>
+<dataGuid v="237c8ed1-e161-4c9d-af97-582eda6d6952">
+<CyGuid_d442b0b8-dd66-4eee-b5be-1cb213792b31 type_name="CyDesigner.PSoC.P3Fit.Common.DesignWideResources.DeviceEditor.CyCustomAnalogDevData" version="1" ZoomToPage="True" ZoomScale="0.507223" ScrollX="466" ScrollY="122">
+<ComponentStates />
+</CyGuid_d442b0b8-dd66-4eee-b5be-1cb213792b31>
+</dataGuid>
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
-<deps_time v="131072546775078969" />
+<deps_time v="131080871622709225" />
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
-</dataGuid>
-<dataGuid v="504337dd-7d07-4bc7-9057-90e60cf6c469">
-<CyGuid_504337dd-7d07-4bc7-9057-90e60cf6c469 type_name="CyDesigner.Common.Debugger.CyBreakpointList" version="1">
-<debugger_breakpoint_list />
-</CyGuid_504337dd-7d07-4bc7-9057-90e60cf6c469>
 </dataGuid>
 </userData>
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
