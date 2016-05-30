@@ -781,7 +781,7 @@
 <name_val_pair name=".\Generated_Source\PSoC4\cyPm.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
 <name_val_pair name=".\Generated_Source\PSoC4\cyutils.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
 <name_val_pair name=".\Generated_Source\PSoC4\CyLFClk.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
-<name_val_pair name="D:\Users\gizmo\Documents\Develop\PSoC4 SPI Slave Test\PSoC(Slave)\PSoC4_SPI_Slave_Test\PSoC4_SPI_Slave_Test_for_NucleoF401RE.cydsn\CortexM0\ARM_GCC_493\Debug\PSoC4_SPI_Slave_Test_for_NucleoF401RE.hex" v="-mcpu=cortex-m0 -mthumb -g -ffunction-sections -Og -L Generated_Source\PSoC4 -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC4\cm0gcc.ld -specs=nano.specs -Wl,--gc-sections" />
+<name_val_pair name="D:\Users\gizmo\Documents\Develop\PSoC4 SPI Slave Test\PSoC(Slave)\PSoC4_SPI_Slave_Test\PSoC4_SPI_Slave_Test_for_NucleoF401RE.cydsn\CortexM0\ARM_GCC_493\Debug\PSoC4_SPI_Slave_Test_for_NucleoF401RE.hex" v="-mcpu=cortex-m0 -mthumb -g -ffunction-sections -Og -ffat-lto-objects -L Generated_Source\PSoC4 -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC4\cm0gcc.ld -specs=nano.specs -Wl,--gc-sections" />
 <name_val_pair name=".\Generated_Source\PSoC4\Clock_1.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
 <name_val_pair name=".\Generated_Source\PSoC4\PWM_1.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
 <name_val_pair name=".\Generated_Source\PSoC4\PWM_1_PM.c" v="-mcpu=cortex-m0 -mthumb -Wno-main -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
@@ -1681,7 +1681,7 @@
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif</v>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif</v>
 </warp_dep>
-<deps_time v="131080869456227713" />
+<deps_time v="131091232243938031" />
 <top_block v="TopDesign" />
 <last_generation v="0" />
 </CyGuid_925cc1e1-309e-4e08-b0a1-09a83c35b157>
@@ -1693,7 +1693,7 @@
 </dataGuid>
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
-<deps_time v="131080871622709225" />
+<deps_time v="131091232327098600" />
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
 </dataGuid>
 </userData>
