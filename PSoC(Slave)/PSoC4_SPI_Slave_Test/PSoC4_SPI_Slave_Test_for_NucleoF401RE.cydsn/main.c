@@ -9,7 +9,7 @@
  *
  * ========================================
 */
-#define UART_TRACE  (1)
+#define UART_TRACE  (0)
 
 #include <project.h>
 #include <stdio.h>
