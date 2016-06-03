@@ -18,9 +18,10 @@
 
 int main()
 {
-    uint8_t rxBuffer[RX_PACKET_SIZE];
+    uint8 rxBuffer[RX_PACKET_SIZE];
     char strBuffer[100];
     int i;
+    uint16 frequency10;
     
     CyGlobalIntEnable; /* Enable global interrupts. */
     UART_Start();
@@ -40,10 +41,13 @@ int main()
             for (i = 1; i < RX_PACKET_SIZE; i++) {
                 rxBuffer[i] = SPIS_SpiUartReadRxData();
             }
-            PWM_WriteCompare(rxBuffer[1]);
+            frequency10 = ((uint16)rxBuffer[3] << 8) | rxBuffer[4];
+            PWM_WriteCompare(frequency10);
 #if(UART_TRACE)
-            sprintf(strBuffer, "%d\t%d\t%d\t%d\t%d\r\n",
-                rxBuffer[0], rxBuffer[1], rxBuffer[2], rxBuffer[3], rxBuffer[4]);
+            sprintf(strBuffer, "%d\t%d\t%d\t%d\t%d\t%d\r\n",
+                rxBuffer[0], rxBuffer[1], rxBuffer[2], rxBuffer[3], rxBuffer[4],
+                frequency10
+            );
             UART_UartPutString(strBuffer);
 #endif     
         }
